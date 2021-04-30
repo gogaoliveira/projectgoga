@@ -16,7 +16,7 @@ import douglasoliveiraprojectgoga.entities.Schedule;
 import douglasoliveiraprojectgoga.services.ScheduleService;
 
 @RestController
-@RequestMapping(value = "/users")
+@RequestMapping(value = "/schedules")
 public class ScheduleResource {
 	
 	@Autowired

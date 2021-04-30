@@ -18,7 +18,7 @@ import douglasoliveiraprojectgoga.entities.Product;
 import douglasoliveiraprojectgoga.services.ProductService;
 
 @RestController
-@RequestMapping(value = "/users")
+@RequestMapping(value = "/products")
 public class ProductResource {
 	
 	@Autowired
