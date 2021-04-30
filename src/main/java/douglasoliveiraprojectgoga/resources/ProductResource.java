@@ -38,7 +38,7 @@ public class ProductResource {
 	}
 
 	@PostMapping
-	public ResponseEntity<Product> insert(@PathVariable Product obj){
+	public ResponseEntity<Product> insert(@RequestBody Product obj){
 		obj = service.insert(obj);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(obj.getId()).toUri();
 		return ResponseEntity.created(uri).body(obj);
