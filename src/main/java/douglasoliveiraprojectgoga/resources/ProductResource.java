@@ -36,7 +36,7 @@ public class ProductResource {
 		Product obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
-	//post
+
 	@PostMapping
 	public ResponseEntity<Product> insert(@PathVariable Product obj){
 		obj = service.insert(obj);
